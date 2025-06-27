@@ -1,2 +1,4 @@
 venv*
 ダウンロード
+__pycache__
+*.ttf
