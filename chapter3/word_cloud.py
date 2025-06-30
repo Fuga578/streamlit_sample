@@ -16,7 +16,8 @@ def get_tokens(text: str) -> list[tuple[str, str]]:
     Args:
         text (str): 文章
     
-    list[tuple[str, str]]: トークン一覧（単語, 品詞）
+    Returns:
+        list[tuple[str, str]]: トークン一覧（単語, 品詞）
     """
     
     sanitized = "".join(text.split())   # 空白除去
