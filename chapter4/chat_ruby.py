@@ -9,7 +9,7 @@ class Rubify:
 
     def initial(self) -> str:
         """最初のセリフを取得します。"""
-        return "ぼくはルビふり<ruby>君<rt></ruby>です。"
+        return "ぼくはルビふり<ruby>君<rt>くん</ruby>です。"
     
     def final(self) -> str:
         """最後のセリフを取得します。"""

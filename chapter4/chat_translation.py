@@ -22,7 +22,7 @@ class Translator:
     def respond(self, text: str) -> str:
         """入力に対する応答を戻します。"""
         results = self.pipe(text, max_length=100, src_lang="ja", tgt_lang="en")
-        return results
+        return results[0]["translation_text"]
     
     def final(self) -> str:
         """終了時のメッセージを取得します。"""
