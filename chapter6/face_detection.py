@@ -37,7 +37,6 @@ def detect(net: any, img: any, thresh: float = PROB_THRESH) -> list[tuple]:
     # shape = [1, 1, N, 7] -> [バッチサイズ, 検出結果セット数, 検出数, 検出項目]
     # [N, 7] -> [[固定値0, クラスラベル(faceの1のみ)], 確信度, xmin比率, ymin比率, xmax比率, ymax比率]
     pred = net.forward()
-    print(pred)
 
     # バウンディングボックス取得
     rectangles = []
